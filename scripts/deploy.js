@@ -1,6 +1,4 @@
 // npx hardhat run scripts/deploy.js --network fxMainnet
-// npx hardhat verify --constructor-args arguments.js --network goerli 0x26f2e0dEAE57b33bFEc2DCD958d04b154e69f405
-// npx hardhat verify --network avalanche 0xa49f2a936770eb6ce5D94A455D9598B6cbbec058
 
 const { ethers, upgrades } = require('hardhat');
 
