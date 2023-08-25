@@ -72,28 +72,6 @@ async function main() {
     // console.log("Contract address:", multiCall.address);
     
 
-
-    /************** Setup ***************/
-
-    // const stakeFXVault = await ethers.getContractAt("StakeFXVault", stFX);
-    // // const fxFeesTreasury = await ethers.getContractAt("FeeTreasury", treasury);
-    // await stakeFXVault.updateConfigs(tokens("0.1"),tokens("100"),tokens("10"),tokens("10"));
-    // await stakeFXVault.updateFees("690","10","50");
-
-    // await stakeFXVault.addValidator("fxvaloper1a73plz6w7fc8ydlwxddanc7a239kk45jnl9xwj", "1000") // Singapore
-    // await stakeFXVault.addValidator("fxvaloper1srkazumnkle6uzmdvqq68df9gglylp3pkhuwna", "1000") // Litecoin
-
-    // await stakeFXVault.updateVestedFX(vestedFX.address);
-    // await stakeFXVault.updateFeeTreasury(fxFeesTreasury.address);
-    // await stakeFXVault.updateDistributor(rewardDistributor.address);
-    
-    // await fxFeesTreasury.updateVestedFX(vestedFX.address);
-    // console.log("Done0");
-
-    // await rewardDistributor.updateLastDistributionTime();
-    // await rewardDistributor.setTokensPerInterval("0")
-
-    // console.log("Done1");
   }
   
   main()
