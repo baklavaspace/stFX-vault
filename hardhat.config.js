@@ -25,9 +25,7 @@ module.exports = {
   }, 
   networks: {
     mainnet: {
-      // url: `https://goerli.infura.io/v3/3f6bc0d4637344c8b7efd24e118a5c45`,
       url: `https://eth-mainnet.g.alchemy.com/v2/${ETH_ALCHEMY_API_KEY}`,
-      // url: `https://rpc.ankr.com/eth_goerli`,
       accounts: [MAINNET_PRIVATE_KEY],
       networkCheckTimeout: 999999,
       timeoutBlocks: 200,
@@ -35,9 +33,7 @@ module.exports = {
       gasPrice: 17000000000,
     },
     goerli: {
-      // url: `https://goerli.infura.io/v3/3f6bc0d4637344c8b7efd24e118a5c45`,
       url: `https://eth-goerli.alchemyapi.io/v2/${ALCHEMY_API_KEY}`,
-      // url: `https://rpc.ankr.com/eth_goerli`,
       accounts: [TESTNET_PRIVATE_KEY],
       networkCheckTimeout: 999999,
       timeoutBlocks: 200,
@@ -74,7 +70,6 @@ module.exports = {
   etherscan: {
     // Your API key for Etherscan
     // Obtain one at https://etherscan.io/
-    // apiKey: "5TQ86X5849114KV5WJXXM7WDYK3AMHSVV9"
     apiKey: {
       mainnet: "YOUR_ETHERSCAN_API_KEY",
       optimisticEthereum: "YOUR_OPTIMISTIC_ETHERSCAN_API_KEY",
