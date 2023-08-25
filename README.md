@@ -15,12 +15,7 @@ Before getting started with this repo, please read:
 ```
 npx install
 npx hardhat run scripts/deploy.js --network fxMainnet
-// deploy the bytecode
 ```
-
-This will ensure that you are testing against the same bytecode that is deployed to
-mainnet and public testnets.
-
 
 # License
 
