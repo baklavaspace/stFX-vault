@@ -11,29 +11,7 @@ async function main() {
 
     console.log("Deploying contracts with the account:", deployer.address);
     console.log("Account balance:", (await deployer.getBalance()).toString());
-  
-    /* ******** Mainnet(FxCore) ******** */
-    const owner = "0x4e3DA49cc22694D53F4a71e4d4BfdFB2BF272887"
-    const governor = "0x4e3DA49cc22694D53F4a71e4d4BfdFB2BF272887"
-    const asset = "0x0000000000000000000000000000000000000000"
-    const reward = "0xc8B4d3e67238e38B20d38908646fF6F4F48De5EC"
 
-    const stFX= "0x5c24B402b4b4550CF94227813f3547B94774c1CB"
-    const vest= "0x37f716f6693EB2681879642e38BbD9e922A53CDf"
-    const treasury= "0xe48C3eA37D4956580799d90a4601887d77A57d55"
-    const distributor= "0xea505C49B43CD0F9Ed3b40D77CAF1e32b0097328"
-    const multicall= "0xF5E657e315d8766e0841eE83DeEE05aa836Cc8ce"
-
-    /* ******** Testnet(Fuji) ******** */
-
-    // const owner = "0xfe6e9353000a31B9C87F4EAE411C89b1E355Ba50"
-    // const governor = "0xfe6e9353000a31B9C87F4EAE411C89b1E355Ba50"
-    // const asset = "0x0000000000000000000000000000000000000000"
-
-    // const stFX= "0x5aF7AC9DfE8C894E88a197033E550614f2214665"
-    // // const vest= "0x8E1D972703c0BbE65cbBa42bd75D0Eb41B8397b5"
-    // const treasury= "0x1dB21fF54414f62FD65D98c6D5FEdCe6C07CeF10"
-    // const reward = "0x28630568bC33Ead4f4A48c0637Dae30aC1114332"
 
 
     // ============ Deploy StakeFXVault ============
@@ -96,11 +74,6 @@ async function main() {
 
 
     /************** Setup ***************/
-    // const stFX= "0x5c24B402b4b4550CF94227813f3547B94774c1CB"
-    // const vest= "0x37f716f6693EB2681879642e38BbD9e922A53CDf"
-    // const treasury= "0xe48C3eA37D4956580799d90a4601887d77A57d55"
-    // const distributor= "0xea505C49B43CD0F9Ed3b40D77CAF1e32b0097328"
-    // const multicall= "0xF5E657e315d8766e0841eE83DeEE05aa836Cc8ce"
 
     // const stakeFXVault = await ethers.getContractAt("StakeFXVault", stFX);
     // // const fxFeesTreasury = await ethers.getContractAt("FeeTreasury", treasury);
