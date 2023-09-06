@@ -148,22 +148,24 @@ contract VestedFX is Initializable, UUPSUpgradeable, OwnableUpgradeable, Reentra
     function _clearClaimedSchedule() internal {
         VestingSchedule[] storage schedules = accountVestingSchedules[msg.sender];
         uint256 schedulesLength = schedules.length;
-
-        for (uint256 i = 0; i < schedulesLength; i++) {
-            VestingSchedule memory schedule = schedules[i];
+        uint256 index;
+        for (index = 0; index < schedulesLength; index++) {
+            VestingSchedule memory schedule = schedules[index];
 
             uint256 vestQuantity = (schedule.quantity) - (schedule.vestedQuantity);
             if (vestQuantity == 0) {
                 continue;
             } else {
-                uint256 index = i;
-                for(uint256 i = 0; i < schedules.length-index; i++) {
-                    schedules[i] = schedules[i+index];      
-                }
-                for(uint256 i = 0; i < index; i++){
-                    schedules.pop();
-                }
                 break;
+            }
+        }
+        
+        if (index != 0) {            
+            for(uint256 i = 0; i < schedules.length-index; i++) {
+                schedules[i] = schedules[i+index];      
+            }
+            for(uint256 i = 0; i < index; i++) {
+                schedules.pop();
             }
         }
     }
